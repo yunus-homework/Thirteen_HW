@@ -1,24 +1,35 @@
-const ask = +prompt("Введите число"),
-  degree = +prompt("В какую степень возвести");
+// const ask = +prompt("Введите число"),
+//   degree = +prompt("В какую степень возвести");
 
-function numberPow(num, degree) {
-  if (isNaN(ask)) {
-    return `some error`;
-  }
-  return Math.pow(num, degree);
-}
-
-alert(numberPow(ask, degree));
-
-// function pow(a, b = 1) {
-//   if (a.trim() === "" || a === null || isNaN(+a)) return `a is not valid`;
-//   if (b.trim() === "" || b === null || isNaN(+b)) return `b is not valid`;
-
-//   return Math.pow(a, b);
+// function numberPow(num, degree) {
+//   if (isNaN(ask)) {
+//     return `some error`;
+//   }
+//   return Math.pow(num, degree);
 // }
 
-// const rest = pow(prompt("Enter Number 1"), prompt(" Enter Number 2"));
-// alert(rest);
+// alert(numberPow(ask, degree));
+
+function isValidNumber(arg) {
+  if (typeof arg === "number" && !isNaN(arg)) {
+    return true;
+  }
+  return false;
+}
+
+function pow(a, b = 1) {
+  if (isValidNumber(a)) {
+    return `a is not valid`;
+  }
+  if (isValidNumber(b)) {
+    return `b is not valid`;
+  }
+
+  return Math.pow(a, b);
+}
+
+const rest = pow(prompt("Enter Number 1"), prompt(" Enter Number 2"));
+alert(rest);
 
 // const result = Math.pow(ask, degree);
 // console.log(result);
