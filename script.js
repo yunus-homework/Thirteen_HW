@@ -10,6 +10,16 @@ function numberPow(num, degree) {
 
 alert(numberPow(ask, degree));
 
+// function pow(a, b = 1) {
+//   if (a.trim() === "" || a === null || isNaN(+a)) return `a is not valid`;
+//   if (b.trim() === "" || b === null || isNaN(+b)) return `b is not valid`;
+
+//   return Math.pow(a, b);
+// }
+
+// const rest = pow(prompt("Enter Number 1"), prompt(" Enter Number 2"));
+// alert(rest);
+
 // const result = Math.pow(ask, degree);
 // console.log(result);
 
@@ -30,7 +40,8 @@ alert(numberPow(ask, degree));
 // пользователю через alert()
 // P.S. Для возведения в степень можно использовать
 
-// Math.pow() — https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/pow
+// Math.pow() —
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/pow
 // Оператор ** пример (2 ** 8) — возводим число 2 в 8-ю степень
 // Дополнительные материалы:
 
